@@ -9,3 +9,19 @@ input#edit-src-name {
 .clearfix {
   display: inline;
 }
+
+.oda-banner .views-more-link {
+/*	float: right;*/
+}
+
+.oda-banner .views-field-created {
+	margin-bottom: 1em
+}
+
+.oda-banner .views_slideshow_cycle_slide {
+	width: 100% !important;
+}
+
+.oda-banner .views-slideshow-pager-fields > div.views-row-first {
+    padding-left: 0;
+}
