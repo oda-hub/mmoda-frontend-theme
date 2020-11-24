@@ -23,11 +23,11 @@ function bootstrap_astrooda_form_element($variables) {
   $attributes['class'] = array(
       'form-item',
   );
-  
+
   if (!empty($element['#parent_classes'])) {
     $attributes['class'][] = implode(' ', $element['#parent_classes']);
   }
-  
+
   if (!empty($element['#type'])) {
     $attributes['class'][] = 'form-type-' . strtr($element['#type'], '_', '-');
   }
@@ -103,11 +103,11 @@ function bootstrap_astrooda_form_element_label($variables) {
   elseif ($element['#title_display'] == 'invisible') {
     $attributes['class'] = 'element-invisible';
   }
-  
+
   if (!empty($element['#label_classes'])) {
     $attributes['class'][] = implode(' ', $element['#label_classes']);
   }
-  
+
   if (!empty($element['#id'])) {
     $attributes['for'] = $element['#id'];
   }
@@ -119,15 +119,7 @@ function bootstrap_astrooda_form_element_label($variables) {
   )) . "</label>\n";
 }
 
-function bootstrap_astrooda_preprocess_page(&$variables) {
-  if (isset($variables['node']->type)) {
-    // If the content type's machine name is "my_machine_name" the file
-    // name will be "page--my-machine-name.tpl.php".
-    $variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
-  }
-}
-
-/*
+  /*
 function bootstrap_astrooda_button($variables) {
   $element = $variables['element'];
   $type = strtolower($element['#button_type']);
