@@ -1,0 +1,5 @@
+# Ignore paths that contain user-generated content.
+.settings
+.buildpath
+.project
+
