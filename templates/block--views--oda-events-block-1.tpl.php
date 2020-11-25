@@ -46,17 +46,11 @@
  * @ingroup templates
  */
 ?>
-<section id="<?php print $block_html_id; ?>"
-	class="<?php print $classes; ?> clearfix" <?php print $attributes; ?>>
-	<div class="panel panel-default">
-		<div class="panel-heading">
-  <?php print render($title_prefix); ?>
-  <?php if ($title): ?>
-    <h4 <?php print $title_attributes; ?>><?php print $title; ?></h4>
-  <?php endif;?>
-  <?php print render($title_suffix); ?>
-	</div>
-		<div class="panel-body"><?php print $content?>
-	</div>
-	</div>
-</section>
+<div class="alert-dismissible alert alert-danger header-info" role="alert">
+	<a href="#" class="close" data-dismiss="alert" aria-label="close"
+		title="close">×</a> <span class="glyphicon glyphicon-info-sign astrooda-alert"> </span>
+  <div class=""><?php print $content?></div>
+
+</div>
+
+
