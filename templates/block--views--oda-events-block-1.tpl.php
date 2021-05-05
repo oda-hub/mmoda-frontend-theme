@@ -47,8 +47,8 @@
  */
 ?>
 <div class="alert-dismissible alert alert-danger header-info" role="alert">
-	<a href="#" class="close" data-dismiss="alert" aria-label="close"
-		title="close">×</a> <span class="glyphicon glyphicon-info-sign astrooda-alert"> </span>
+	<span class="close" data-dismiss="alert" aria-label="close"
+		title="close">×</span> <span class="glyphicon glyphicon-info-sign astrooda-alert"> </span>
   <div class=""><?php print $content?></div>
 
 </div>
