@@ -1,3 +1,11 @@
+
+.navbar.container, .navbar.container-fluid {
+    margin-top: 0px;
+}
+
+.navbar-header .logo img{
+  height: 50px;
+}
 span#resolve-src-name.form-group:after {
   padding-bottom: 15px;
 }
