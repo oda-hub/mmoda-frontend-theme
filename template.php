@@ -4,7 +4,6 @@
  * bootstrap_astrooda_form_alter(&$form, &$form_state, $form_id) { ... }
  */
 
-
 function bootstrap_astrooda_form_element($variables) {
   $element =& $variables['element'];
 
