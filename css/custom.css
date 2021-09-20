@@ -18,3 +18,7 @@ input#edit-src-name {
   margin-top: 0.25em;
   margin-bottom: 0.5em;
 }
+
+.description ul li:first-child{
+  margin-top: 0.5em;
+}
