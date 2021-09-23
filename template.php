@@ -22,11 +22,11 @@ function bootstrap_astrooda_form_element($variables) {
   $attributes['class'] = array(
       'form-item',
   );
-  
+
   if (!empty($element['#parent_classes'])) {
     $attributes['class'][] = implode(' ', $element['#parent_classes']);
   }
-  
+
   if (!empty($element['#type'])) {
     $attributes['class'][] = 'form-type-' . strtr($element['#type'], '_', '-');
   }
@@ -102,11 +102,11 @@ function bootstrap_astrooda_form_element_label($variables) {
   elseif ($element['#title_display'] == 'invisible') {
     $attributes['class'] = 'element-invisible';
   }
-  
+
   if (!empty($element['#label_classes'])) {
     $attributes['class'][] = implode(' ', $element['#label_classes']);
   }
-  
+
   if (!empty($element['#id'])) {
     $attributes['for'] = $element['#id'];
   }
