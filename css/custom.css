@@ -1,11 +1,19 @@
-
 .navbar.container, .navbar.container-fluid {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
-.navbar-header .logo img{
+#block-system-user-menu {
+  text-align: right;
+}
+
+#block-system-user-menu .nav>li {
+  display: inline-block
+}
+
+.navbar-header .logo img {
   height: 50px;
 }
+
 span#resolve-src-name.form-group:after {
   padding-bottom: 15px;
 }
@@ -26,12 +34,12 @@ input#edit-src-name {
   width: 100% !important;
 }
 
-.oda-banner .views-slideshow-pager-fields > div.views-row-first {
-    padding-left: 0;
+.oda-banner .views-slideshow-pager-fields>div.views-row-first {
+  padding-left: 0;
 }
 
 .panel-title {
-	display: inline-block;
+  display: inline-block;
 }
 
 .header-info .astrooda-alert {
