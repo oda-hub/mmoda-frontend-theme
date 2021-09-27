@@ -4,6 +4,20 @@
  * bootstrap_astrooda_form_alter(&$form, &$form_state, $form_id) { ... }
  */
 
+<<<<<<< HEAD
+=======
+function bootstrap_astrooda_form_alter(&$form, &$form_state, $form_id)
+{
+  switch ($form_id) {
+    case 'user_profile_form':
+      error_log("inuser_profile_form:\n".print_r($form, true) );
+      unset($form['contact']);
+      unset($form['mimemail']);
+      break;
+  }
+}
+
+>>>>>>> master
 function bootstrap_astrooda_form_element($variables) {
   $element =& $variables['element'];
 
