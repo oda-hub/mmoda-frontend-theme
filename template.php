@@ -4,8 +4,6 @@
  * bootstrap_astrooda_form_alter(&$form, &$form_state, $form_id) { ... }
  */
 
-<<<<<<< HEAD
-=======
 function bootstrap_astrooda_form_alter(&$form, &$form_state, $form_id)
 {
   switch ($form_id) {
@@ -17,7 +15,6 @@ function bootstrap_astrooda_form_alter(&$form, &$form_state, $form_id)
   }
 }
 
->>>>>>> master
 function bootstrap_astrooda_form_element($variables) {
   $element =& $variables['element'];
 
