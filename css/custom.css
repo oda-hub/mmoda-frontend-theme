@@ -26,7 +26,7 @@ input#edit-src-name {
   display: inline;
 }
 
-.description_use_case_textarea {
+.description-use-case-textarea {
   resize: none;
 }
 
@@ -35,8 +35,15 @@ input#edit-src-name {
   margin-bottom: 0.5em;
 }
 
-.description ul li:first-child{
+.description ul li:first-child {
   margin-top: 0.5em;
+}
+
+.resizable-textarea .grippie {
+  border: 0px;
+  border-top-width: 0;
+  height: 0px;
+}
 
 .oda-banner .views-field-created {
   margin-bottom: 1em
