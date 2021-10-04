@@ -37,6 +37,7 @@ input#edit-src-name {
 
 .description ul li:first-child{
   margin-top: 0.5em;
+}
 
 .oda-banner .views-field-created {
   margin-bottom: 1em
@@ -57,3 +58,13 @@ input#edit-src-name {
 .header-info .astrooda-alert {
   font-size: 2vw;
 }
+
+#block-system-user-menu ul > li a {
+    display: inline-block;
+}
+
+#block-system-user-menu ul > li:not(.first)::before {
+    content: "|";
+    display: inline-block;
+}
+
