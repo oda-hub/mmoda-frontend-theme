@@ -1,3 +1,9 @@
+
+.mmoda-user-menu {
+  padding: 1em;
+  float: right ;
+}
+
 .navbar.container, .navbar.container-fluid {
   margin-top: 0px;
 }
@@ -74,3 +80,6 @@ input#edit-src-name {
     display: inline-block;
 }
 
+.btn-help {
+  padding: 5px 8px;
+}

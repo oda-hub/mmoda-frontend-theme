@@ -90,23 +90,23 @@ if ($is_front) {
       </a>
       <a class="logo navbar-btn pull-left" target="_blank"
         href="https://www.unige.ch/sciences/astro/en/"
-        title="Departement of Astronomy - university of Geneva"> <img
-        src="<?php print $directory;?>/logo-fac-sciences.png" alt="Departement of Astronomy - university of Geneva" />
+        title="Departement of Astronomy - university of Geneva"><img
+        src="<?php print $base_path.$directory;?>/logo-fac-sciences.png" alt="Departement of Astronomy - university of Geneva" />
       </a>
       <a class="logo navbar-btn pull-left" target="_blank"
         href="https://www.isdc.unige.ch/integral/"
-        title="The INTErnational Gamma-Ray Astrophysics Laboratory - INTEGRAL"> <img
-        src="<?php print $directory;?>/logo-isdc.png" alt="The INTErnational Gamma-Ray Astrophysics Laboratory - INTEGRAL" />
+        title="The INTErnational Gamma-Ray Astrophysics Laboratory - INTEGRAL"><img
+        src="<?php print $base_path.$directory;?>/logo-isdc.png" alt="The INTErnational Gamma-Ray Astrophysics Laboratory - INTEGRAL" />
       </a>
       <a class="logo navbar-btn pull-left"
         href="https://www.epfl.ch/labs/lastro" target="_blank"
-        title="Laboratory of Astrophysics (LASTRO) - EPFL"> <img
-        src="<?php print $directory;?>/logo-epfl.png" alt="Laboratory of Astrophysics (LASTRO) - EPFL" />
+        title="Laboratory of Astrophysics (LASTRO) - EPFL"><img
+        src="<?php print $base_path.$directory;?>/logo-epfl.png" alt="Laboratory of Astrophysics (LASTRO) - EPFL" />
       </a>
       <a class="logo navbar-btn pull-left"
         href="https://apc.u-paris.fr/APC_CS/en" target="_blank"
-        title="Laboratoire AstroParticule et Cosmologie (APC)"> <img
-        src="<?php print $directory;?>/logo-apc.png" alt="Laboratoire AstroParticule et Cosmologie (APC)" />
+        title="Laboratoire AstroParticule et Cosmologie (APC)"><img
+        src="<?php print $base_path.$directory;?>/logo-apc.png" alt="Laboratoire AstroParticule et Cosmologie (APC)" />
       </a>
       <?php endif; ?>
 
@@ -126,24 +126,40 @@ if ($is_front) {
     </div>
         <div class="mmoda-user-menu btn-group pull-right" role="group">
           <?php  if (!$logged_in) :?>
+          <div class="openid-connect-block pull-left">
+           <?php
+          module_load_include('inc', 'openid_connect', 'includes/openid_connect.forms');
+          $form = drupal_get_form('openid_connect_login_form');
+
+          print drupal_render($form);
+          //print drupal_render(drupal_get_form('openid_connect_login_form'));
+          ?>
+          </div>
           <a title="Sign in"
-            class="btn btn-default"
+            class="btn btn-primary"
             href="user/login"><span class="oda-icon-label">Sign in</span><span
             class="glyphicon glyphicon-log-in"> </span> </a>
 
           <a
-            title="Sign up" class="ctools-use-modal ctools-modal-modal-popup-large btn btn-default"
+            title="Sign up" class="ctools-use-modal ctools-modal-modal-popup-large btn btn-primary"
             href="modal_forms/nojs/register"><span class="oda-icon-label">Sign up</span><span
             class="glyphicon glyphicon-user"> </span> </a>
           <?php  else :?>
           <a
-            title="My account"
-            class="ctools-use-modal ctools-modal-modal-popup-large btn btn-default open-in-modal" href="modal_forms/nojs/user/<?=$GLOBALS['user']->uid?>/edit"><span
+            title="My account" target="_blank"
+            data-cclass="ctools-use-modal ctools-modal-modal-popup-large btn btn-primary open-in-modal" class="btn btn-primary" href="user"><span
             class="oda-icon-label">My account</span><span
             class="glyphicon glyphicon-user"> </span> </a>
+          <!--
+            <a
+            title="My account"
+            class="ctools-use-modal ctools-modal-modal-popup-large btn btn-default open-in-modal" href="modal_forms/nojs/user/<?=$GLOBALS['user']->uid?>/change-password"><span
+            class="oda-icon-label">Change password</span><span
+            class="glyphicon glyphicon-lock"> </span> </a>
+            -->
          <a
             title="Sign out"
-            class="btn btn-default"
+            class="btn btn-primary"
             href="user/logout"><span class="oda-icon-label">Sign out</span><span
             class="glyphicon glyphicon-log-out"></span> </a>
           <?php endif;?>
