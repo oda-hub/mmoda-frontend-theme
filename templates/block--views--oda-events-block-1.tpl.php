@@ -46,11 +46,11 @@
  * @ingroup templates
  */
 ?>
-<div class="alert-dismissible alert alert-danger header-info" role="alert">
+<div id="mmoda-home-banner-events" class="alert-dismissible alert alert-default header-info" role="alert">
 	<span class="close" data-dismiss="alert" aria-label="close"
-		title="close">×</span> <span class="glyphicon glyphicon-info-sign astrooda-alert"> </span>
-  <div class=""><?php print $content?></div>
-
+		title="close">×</span>
+    <div class="glyphicon glyphicon-info-sign astrooda-alert"> </div>
+  <div><?php print $content?></div>
 </div>
 
 

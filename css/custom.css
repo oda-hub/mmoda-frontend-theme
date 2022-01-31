@@ -1,7 +1,6 @@
-
 .mmoda-user-menu {
   padding: 1em;
-  float: right ;
+  float: right;
 }
 
 .navbar.container, .navbar.container-fluid {
@@ -71,15 +70,43 @@ input#edit-src-name {
   font-size: 2vw;
 }
 
-#block-system-user-menu ul > li a {
-    display: inline-block;
+#block-system-user-menu ul>li a {
+  display: inline-block;
 }
 
-#block-system-user-menu ul > li:not(.first)::before {
-    content: "|";
-    display: inline-block;
+#block-system-user-menu ul>li:not(.first)::before {
+  content: "|";
+  display: inline-block;
 }
 
 .btn-help {
   padding: 5px 8px;
+}
+
+.alert-default {
+  background-color: #F5F5F5;
+}
+
+.category-4 {
+  background-color: lightgreen;
+}
+
+.category-1 {
+  background-color: #f2dede;
+}
+
+.mmoda-event-content {
+  padding: 0.7em;
+}
+
+.mmoda-event-content h3{
+  margin-top: 0;
+}
+
+.astrooda-alert {
+  vertical-align: top;
+}
+
+.views_slideshow_main {
+  margin-bottom: 1em;
 }
