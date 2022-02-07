@@ -186,6 +186,9 @@
 
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
+      <?php if ($messages): ?>
+        <div id="console" class="clearfix"><?php print $messages; ?></div>
+      <?php endif; ?>
 
   <div class="row">
 

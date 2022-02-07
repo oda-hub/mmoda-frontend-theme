@@ -1,0 +1,28 @@
+// Default variables.
+@import 'default-variables';
+
+// Bootstrap Framework.
+@import '../bootstrap/assets/stylesheets/bootstrap';
+
+// Base-theme overrides.
+@import 'overrides';
+
+$event-types:
+  "primary"   "#084298" "#cfe2ff" "#b6d4fe",
+  "secondary" "#41464b" "#e2e3e5" "#d3d6d8",
+  "success"   "#0f5132" "#d1e7dd" "#badbcc",
+  "danger"    "#842029" "#f8d7da" "#f5c2c7",
+  "warning"   "#664d03" "#fff3cd" "#ffecb5",
+  "info"      "#055160" "#cff4fc" "#b6effb",
+  "light"     "#636464" "#fefefe" "#fdfdfe",
+  "dark"      "#141619" "#d3d3d4" "#bcbebf";
+
+@each $state, $fg-color, $bg-color, $bd-color in $event-types {
+  .mmoda-event-#{$state} {
+    color: $fg-color;
+    background-color: $bg-color;
+    border-color: $bd-color;
+  }
+}
+
+

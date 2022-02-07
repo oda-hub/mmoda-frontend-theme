@@ -26,6 +26,7 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/style.css
 ;stylesheets[all][] = css/theme.css
 ;stylesheets[all][] = css/theme-elements.css
 stylesheets[all][] = css/skin.css

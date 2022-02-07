@@ -19,7 +19,7 @@ $mmoda_event_category = $variables['view']->result[$variables['count']]->field_f
 <div
   id="views_slideshow_cycle_div_<?php print $variables['vss_id']; ?>_<?php print $variables['count']; ?>"
   class="<?php print $classes; ?>" <?php print $aria; ?>>
-  <div class="mmoda-event-content category-<?=$mmoda_event_category?>">
+  <div class="mmoda-event-content mmoda-event-<?=$mmoda_event_category?>">
   <?php print $rendered_items; ?>
   </div>
 </div>

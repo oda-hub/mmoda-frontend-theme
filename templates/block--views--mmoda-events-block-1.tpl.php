@@ -49,7 +49,7 @@
 <div id="mmoda-home-banner-events" class="alert-dismissible alert alert-default header-info" role="alert">
 	<span class="close" data-dismiss="alert" aria-label="close"
 		title="close">×</span>
-    <div class="glyphicon glyphicon-info-sign astrooda-alert"> </div>
+    <h1><span class="glyphicon glyphicon-info-sign astrooda-alert"> </span> MMODA News</h1>
   <div><?php print $content?></div>
 </div>
 
