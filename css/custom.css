@@ -1,3 +1,5 @@
+
+
 .views-more-link {
   display: block;
 }
@@ -76,7 +78,7 @@ input#edit-src-name {
   display: inline-block;
 }
 
-.header-info .astrooda-alert {
+.header-info .mmoda-alert {
   font-size: 2vw;
 }
 
@@ -113,7 +115,7 @@ input#edit-src-name {
   margin-top: 0;
 }
 
-.astrooda-alert {
+.mmoda-alert {
   vertical-align: top;
 }
 
@@ -135,4 +137,13 @@ input#edit-src-name {
   list-style-type: square;
   list-style-position: inside;
   padding-left: 0;
+}
+
+.node-mmoda-help-page .book-navigation-bottom .book-toc{
+    display: none;
+}
+
+.book-navigation {
+  background-color: lightgray;
+  padding: 4px;
 }

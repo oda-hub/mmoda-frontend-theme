@@ -1,11 +1,11 @@
 <?php
 
 /*
- * Prefix your custom functions with bootstrap_astrooda. For example:
- * bootstrap_astrooda_form_alter(&$form, &$form_state, $form_id) { ... }
+ * Prefix your custom functions with bootstrap_mmoda. For example:
+ * bootstrap_mmoda_form_alter(&$form, &$form_state, $form_id) { ... }
  */
 
-// function bootstrap_astrooda_form_alter(&$form, &$form_state, $form_id)
+// function bootstrap_mmoda_form_alter(&$form, &$form_state, $form_id)
 // {
 // switch ($form_id) {
 // case 'user_profile_form':
@@ -14,7 +14,7 @@
 // break;
 // }
 // }
-function bootstrap_astrooda_form_element($variables)
+function bootstrap_mmoda_form_element($variables)
 {
   $element = &$variables['element'];
 
@@ -86,7 +86,7 @@ function bootstrap_astrooda_form_element($variables)
   return $output;
 }
 
-function bootstrap_astrooda_form_element_label($variables)
+function bootstrap_mmoda_form_element_label($variables)
 {
   $element = $variables['element'];
 
@@ -132,7 +132,7 @@ function bootstrap_astrooda_form_element_label($variables)
   )) . "</label>\n";
 }
 
-function bootstrap_astrooda_preprocess_page(&$variables)
+function bootstrap_mmoda_preprocess_page(&$variables)
 {
   if (isset($variables['node']->type)) {
     // If the content type's machine name is "my_machine_name" the file
@@ -141,8 +141,32 @@ function bootstrap_astrooda_preprocess_page(&$variables)
   }
 }
 
+/**
+ * Overrides theme_menu_tree() for book module.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - tree: An HTML string containing the tree's items.
+ *
+ * @return string
+ *   The constructed HTML.
+ */
+function bootstrap_mmoda_menu_tree__book_toc(array &$variables) {
+  $output = '<div class="book-toc btn-group pull-right">';
+  $output .= '  <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">';
+  $output .= t('!icon Help outline !caret', array(
+    '!icon' => _bootstrap_icon('list'),
+    '!caret' => '<span class="caret"></span>',
+  ));
+  $output .= '</button>';
+  $output .= '<ul class="dropdown-menu" role="menu">' . $variables['tree'] . '</ul>';
+  $output .= '</div>';
+  return $output;
+}
+
+
 /*
-function bootstrap_astrooda_button($variables) {
+function bootstrap_mmoda_button($variables) {
   $element = $variables['element'];
   $type = strtolower($element['#button_type']);
   switch($type){

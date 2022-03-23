@@ -110,10 +110,12 @@ if ($is_front) {
       </a>
       <?php endif; ?>
 
+      <!-- MTM disable site name
       <?php if (!empty($site_name)): ?>
         <a class="name navbar-brand" href="<?php print $front_page; ?>"
         title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       <?php endif; ?>
+      -->
 
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <button type="button" class="navbar-toggle"
@@ -187,17 +189,19 @@ if ($is_front) {
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
+      <!-- MTM disable slogan
       <p class="lead"><?php print $site_slogan; ?></p>
+       -->
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
   </header>
   <!-- /#page-header -->
 
-  <div class="row">
+  <div class="row testus">
 
 
-    <section <?php print $content_column_class; ?>>
+    <section class="col-sm-12">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>

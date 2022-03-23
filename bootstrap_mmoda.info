@@ -1,4 +1,4 @@
-name = Bootstrap astrooda
+name = Bootstrap mmoda
 description = Uses the Bootstrap Framework Sass source files and must be compiled (not for beginners).
 core = 7.x
 base theme = bootstrap
@@ -39,3 +39,4 @@ stylesheets[all][] = css/custom.css
 ;;;;;;;;;;;;;;;;;;;;;
 
 scripts[] = js/custom.js
+
