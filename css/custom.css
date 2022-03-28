@@ -147,3 +147,9 @@ input#edit-src-name {
   background-color: lightgray;
   padding: 4px;
 }
+
+button.eu-cookie-compliance-default-button::before {
+  content: "\2714"; /* ✔ Heavy Check Mark Emoji*/
+  font-size: 180%;
+  
+}
