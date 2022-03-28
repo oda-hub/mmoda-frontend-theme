@@ -108,6 +108,11 @@ if ($is_front) {
         title="Laboratoire AstroParticule et Cosmologie (APC)"><img
         src="<?php print $base_path.$directory;?>/logo-apc.png" alt="Laboratoire AstroParticule et Cosmologie (APC)" />
       </a>
+      <a class="logo navbar-btn pull-left"
+        href="https://kau.org.ua/en" target="_blank"
+        title="Kyiv Academic University (KAU)"><img
+        src="<?php print $base_path.$directory;?>/logo-kau.png" alt="Kyiv Academic University (KAU)" />
+      </a>
       <?php endif; ?>
 
       <!-- MTM disable site name
