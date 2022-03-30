@@ -1,4 +1,10 @@
+.form-control {
+  width: auto;
+}
 
+.common-params .form-control {
+  width: 100%;
+}
 
 .views-more-link {
   display: block;
