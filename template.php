@@ -113,7 +113,7 @@ function bootstrap_mmoda_form_element_label($variables)
   }
 
   $pattern = '/^field_category/';
-  if (preg_match($pattern, $element['#name']) and isset($element['#return_value'])) {
+  if (array_key_exists('#name', $element) and preg_match($pattern, $element['#name']) and isset($element['#return_value'])) {
     $attributes['class'].= ' mmoda-event-category mmoda-event-' . $element['#return_value'];
   }
 

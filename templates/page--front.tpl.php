@@ -144,19 +144,21 @@ if ($is_front) {
           </div>
           <a title="Sign in"
             class="btn btn-default"
-            href="user/login"><span class="oda-icon-label">Sign in</span><span
-            class="glyphicon glyphicon-log-in"> </span> </a>
+            href="<?=$base_path?>user/login"><span class="oda-icon-label">Sign in </span>
+            <span class="glyphicon glyphicon-log-in"></span> </a>
 
           <a
-            title="Sign up" class="ctools-use-modal ctools-modal-modal-popup-large btn btn-default"
-            href="modal_forms/nojs/register"><span class="oda-icon-label">Sign up</span><span
-            class="glyphicon glyphicon-user"> </span> </a>
+            title="Sign up"
+            class="btn btn-default"
+            href="<?=$base_path?>user/register"><span class="oda-icon-label">Sign up </span>
+            <span class="glyphicon glyphicon-user"></span> </a>
           <?php  else :?>
           <a
-            title="My account" target="_blank"
-            data-cclass="ctools-use-modal ctools-modal-modal-popup-large btn btn-primary open-in-modal" class="btn btn-default" href="user"><span
-            class="oda-icon-label">My account</span><span
-            class="glyphicon glyphicon-user"> </span> </a>
+            title="My account"
+            data-mmodaclass="ctools-use-modal ctools-modal-modal-popup-large btn btn-default"
+            class="btn btn-default" target="_blank"
+            href="<?=$base_path?>user"><span class="oda-icon-label">My account </span>
+            <span class="glyphicon glyphicon-user"> </span> </a>
           <!--
             <a
             title="My account"
@@ -167,8 +169,8 @@ if ($is_front) {
          <a
             title="Sign out"
             class="btn btn-default"
-            href="user/logout"><span class="oda-icon-label">Sign out</span><span
-            class="glyphicon glyphicon-log-out"></span> </a>
+            href="<?=$base_path?>user/logout"><span class="oda-icon-label">Sign out </span>
+            <span class="glyphicon glyphicon-log-out"></span> </a>
           <?php endif;?>
         </div>
 
