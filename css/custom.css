@@ -159,3 +159,7 @@ button.eu-cookie-compliance-default-button::before {
   font-size: 180%;
   
 }
+
+.alert-warning {
+  color: darkred;
+}
