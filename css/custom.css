@@ -160,6 +160,11 @@ button.eu-cookie-compliance-default-button::before {
   
 }
 
+.btn.btn-primary[disabled] {
+  border-color: #007d64;
+  background-color: #007d64;
+}
+
 .alert-warning {
   color: darkred;
 }
