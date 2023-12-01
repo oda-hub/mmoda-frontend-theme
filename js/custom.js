@@ -3,6 +3,7 @@
     maxHeight = $('.views_slideshow_cycle_main', "#mmoda-home-banner-events").height();
     $(".mmoda-event-content", "#mmoda-home-banner-events").height(maxHeight);
   });
+
   Drupal.behaviors.AlignPopup = {
     attach: function() {
       popup = $('#modalContent');
