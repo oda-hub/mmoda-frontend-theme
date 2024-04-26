@@ -205,7 +205,7 @@ if ($is_front) {
   </header>
   <!-- /#page-header -->
 
-  <div class="row testus">
+  <div class="row">
 
 
     <section class="col-sm-12">
