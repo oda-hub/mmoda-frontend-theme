@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * MMODA Bootstrap 5 theme file.
+ */
+function mmoda_bootstrap_preprocess(&$variables, $hook)
+{
+  $variables['theme_base_path'] = base_path();
+}
+
+function mmoda_bootstrap_contextual_links_alter(array &$links, $group, array $route_parameters)
+{
+  error_log('Group : ' . $group);
+}
+
+function mmoda_bootstrap_preprocess_page(&$variables)
+{
+
+//   $block_manager = \Drupal::service('plugin.manager.block');
+//   $plugin_block = $block_manager->createInstance('mmoda_bootstrap_mmoda', array());
+//   $render = $plugin_block->build();
+//   $variables['page']['mmoda_block'] = $render;
+  // Display the breadcrumb nicely in the node
+//   $block = \Drupal\block\Entity\Block::load('mmoda_bootstrap_mmoda')->getPlugin()->build();
+//   $variables['page']['mmoda_block'] = $block;
+
+//   $block_manager = \Drupal::service('plugin.manager.block');
+//   // You can hard code configuration or you load from settings.
+//   $config = [];
+//   $plugin_block = $block_manager->createInstance('mmoda_bootstrap_mmoda', $config);
+//   // Some blocks might implement access check.
+//   $access_result = $plugin_block->access(\Drupal::currentUser());
+//   // Return empty render array if user doesn't have access.
+//   // $access_result can be boolean or an AccessResult class
+//   if (is_object($access_result) && $access_result->isForbidden() || is_bool($access_result) && !$access_result) {
+//     // You might need to add some cache tags/contexts.
+//     return [];
+//   }
+//   $render = $plugin_block->build();
+//   // Add the cache tags/contexts.
+//   \Drupal::service('renderer')->addCacheableDependency($render, $plugin_block);
+//   $variables['page']['mmoda_block'] = $render;
+  //return $render;
+}

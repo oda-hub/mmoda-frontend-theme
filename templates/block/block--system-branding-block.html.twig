@@ -1,0 +1,44 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+{% block content %}
+<div class="navbar-brand d-flex align-items-center">
+  <a href="{{ path('<front>') }}" target="_blank">
+    <img src="{{ theme_base_path ~ directory }}/images/logo_mmoda.png">
+  </a>
+  <a href="https://www.unige.ch/sciences/astro/en/" title="Departement of Astronomy - university of Geneva" target="_blank">
+    <img src="{{ theme_base_path ~ directory }}/images/logo_unige_fac_sciences.png">
+  </a>
+  <a href="https://www.isdc.unige.ch/integral/" title="The INTErnational Gamma-Ray Astrophysics Laboratory - INTEGRAL" target="_blank">
+    <img src="{{ theme_base_path ~ directory }}/images/logo_isdc.png">
+  </a>
+  <a href="https://www.epfl.ch/labs/lastro" title="Laboratory of Astrophysics (LASTRO) - EPFL" target="_blank">
+    <img src="{{ theme_base_path ~ directory }}/images/logo_epfl.png">
+  </a>
+  <a href="https://apc.u-paris.fr/APC_CS/en" title="Laboratoire AstroParticule et Cosmologie (APC)" target="_blank">
+    <img src="{{ theme_base_path ~ directory }}/images/logo_apc.png">
+  </a>
+  <a href="https://kau.org.ua/en" title="Kyiv Academic University (KAU)" target="_blank">
+    <img src="{{ theme_base_path ~ directory }}/images/logo_kau.png">
+  </a>
+  {% if site_name %}
+  <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-title">
+    {{ site_name }}
+  </a>
+  {% endif %}
+
+</div>
+
+{% endblock %}

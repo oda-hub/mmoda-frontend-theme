@@ -1,3 +1,11 @@
-Use this folder to override template, theme and \[pre\]process functions.
+# MMODA Bootstrap 5 theme
 
-Please refer to the @link registry Theme Registry @endlink topic for more info.
+[Bootstrap 5](https://www.drupal.org/project/bootstrap5) subtheme.
+
+## Development.
+
+### CSS compilation.
+
+Prerequisites: install [sass](https://sass-lang.com/install).
+
+To compile, run from subtheme directory: `sass scss/style.scss css/style.css && sass scss/ck5style.scss css/ck5style.css`
