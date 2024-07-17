@@ -21,3 +21,11 @@
 .menu--account a {
  text-decoration: none; 
 }
+
+.node-mmoda-help-page .book-navigation-bottom .book-toc {
+    display: none;
+}
+
+main {
+  width: 1200px;
+}

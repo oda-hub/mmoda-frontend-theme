@@ -10,8 +10,13 @@
   display: none;
 }
 
-.form-item label:not(.option), .instruments-card .tab-title {
-  font-weight: bold;
+.eu-cookie-compliance-buttons {
+	margin: 1em;
+}
+
+button.eu-cookie-compliance-default-button::before {
+  content: "\2714"; /* ✔ Heavy Check Mark Emoji*/
+  font-size: 180%;
 }
 
 .instruments-card .tab-messenger {
@@ -20,4 +25,50 @@
 
 .menu--account a {
  text-decoration: none; 
+}
+
+.mmoda-resolve-message {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+
+form .actions {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+span.card-header-toolbox span, span.card-header-toolbox a, span.card-header-toolbox button {
+  padding-left: 0.5em;
+}
+
+.node--type-mmoda-help-page .book-navigation-bottom .book-toc {
+  display: none;
+}
+
+@media (min-width: 1400px) {
+  .path-frontpage main .container-xxl, .path-frontpage main .container-xl, .path-frontpage main .container-lg, .path-frontpage main .container-md, .path-frontpage main .container-sm, .path-frontpage main .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .path-frontpage main .container-xl, .path-frontpage main .container-lg, .path-frontpage main .container-md, .path-frontpage main .container-sm, .path-frontpage main .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .path-frontpage main .container-lg, .path-frontpage main .container-md, .path-frontpage main .container-sm, .path-frontpage main .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .path-frontpage main .container-md, .path-frontpage main .container-sm, .path-frontpage main .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .path-frontpage main .container-sm, .path-frontpage main .container {
+    max-width: 100%;
+  }
 }
