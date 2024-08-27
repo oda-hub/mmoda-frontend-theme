@@ -1,8 +1,9 @@
-name: 'MMODA Bootstrap 5'
+name: 'MMODA Bootstrap'
 type: theme
 description: 'MMODA Bootstrap 5 subtheme based on Bootstrap 5 theme.'
 core_version_requirement: '^9.4 || ^10'
-'base theme': bootstrap5
+base theme: bootstrap5
+logo: images/logo_mmoda.png
 libraries:
   - bootstrap5/global-styling
   - mmoda_bootstrap/global-styling
