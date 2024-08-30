@@ -34,11 +34,6 @@ button.eu-cookie-compliance-default-button::before {
     color: #737373;
 }
 
-form .actions {
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-}
-
 span.card-header-toolbox span, span.card-header-toolbox a, span.card-header-toolbox button {
   padding-left: 0.5em;
 }
