@@ -56,12 +56,16 @@ set footer_classes = ' ' ~
   (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ')
 %}
 
+{%
+set container_classes = ( b5_top_container | replace({'container': ''}) ) ~ 'container-fluid d-flex'
+%}
+
 <header>
   {{ page.header }}
 
   {% if page.nav_branding or page.nav_main or page.nav_additional %}
   <nav class="{{ nav_classes }} p-3 mb-4 shadow-lg">
-    <div class="{{ b5_top_container }} d-flex">
+    <div class="{{ container_classes }} d-flex">
       {{ page.nav_branding }}
 
       {% if page.nav_main or page.nav_additional %}
