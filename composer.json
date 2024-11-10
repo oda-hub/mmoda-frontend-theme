@@ -1,20 +1,24 @@
 {
-	"name" : "oda/bootstrap_mmoda",
-	"description" : "MMODA Bootstrap 5 subtheme based on Bootstrap 5 theme",
-	"type" : "drupal-custom-theme",
-  "authors" : [{
-      "name" : "Mohamed Meharga",
-      "email" : "mtm@mtmco.net"
-    }, {
-      "name" : "Gabriele Barni",
-      "email" : "Gabriele.Barni@unige.ch"
-    }, {
-      "name" : "Denys Savchenko",
-      "email" : "savchenko@apc.in2p3.fr"
-    }, {
-      "name" : "Volodymyr Savchenko",
-      "email" : "Volodymyr.Savchenko@unige.ch"
+  "name": "oda/bootstrap_mmoda",
+  "description": "MMODA Bootstrap 5 subtheme based on Bootstrap 5 theme",
+  "type": "drupal-custom-theme",
+  "authors": [
+    {
+      "name": "Mohamed Meharga",
+      "email": "mtm@mtmco.net"
+    },
+    {
+      "name": "Gabriele Barni",
+      "email": "Gabriele.Barni@unige.ch"
+    },
+    {
+      "name": "Denys Savchenko",
+      "email": "savchenko@apc.in2p3.fr"
+    },
+    {
+      "name": "Volodymyr Savchenko",
+      "email": "Volodymyr.Savchenko@unige.ch"
     }
   ],
-	"minimum-stability" : "dev"
+  "minimum-stability": "dev"
 }
