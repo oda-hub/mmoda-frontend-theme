@@ -67,3 +67,8 @@ span.card-header-toolbox span, span.card-header-toolbox a, span.card-header-tool
     max-width: 100%;
   }
 }
+
+/** Very important **/
+.invalid-feedback {
+    display: inline-block;
+}
