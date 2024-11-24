@@ -1,7 +1,7 @@
 .navbar-brand img {
   height: 50px;
 }
-
+/*
 [class*="collapse-indicator"][aria-expanded="false"] .bi-chevron-up {
   display: none;
 }
@@ -9,7 +9,7 @@
 [class*="collapse-indicator"][aria-expanded="true"] .bi-chevron-down {
   display: none;
 }
-
+*/
 .eu-cookie-compliance-buttons {
 	margin: 1em;
 }
@@ -899,3 +899,17 @@ input.btn:disabled {
   width: auto;
   margin-left: 12px;
 }
+
+.card-header i.bi-chevron-down, .card-header a i.bi-chevron-down  {
+  transition: .3s transform ease-in-out;
+  padding: 0;
+}
+
+.card-header.collapsed i.bi-chevron-down, .card-header .collapsed i.bi-chevron-down {
+  transform: rotate(180deg);
+}
+
+.card.result-card .card-header .btn-close {
+  padding-top: 8px;
+}
+
