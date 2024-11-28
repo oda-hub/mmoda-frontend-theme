@@ -146,7 +146,8 @@ span.card-header-toolbox span, span.card-header-toolbox a, span.card-header-tool
   display: flex;
 }
 
-#ldialog .summary .summary-warnings {
+#ldialog .summary .summary-warnings,
+#ldialog .return-progress-link {
   margin-top: 0.5em;
 }
 
@@ -607,7 +608,7 @@ button.send-email-token-form {
   opacity: 0.65;
 }  
 
-.return-progress-link.enabled,
+.return-progress-link.enabled .prompt,
 .more-less-details.enabled {
   color: #007d64;
   cursor: pointer;
@@ -622,6 +623,7 @@ button.send-email-token-form {
 
 .return-progress-link.enabled .prompt {
   filter: grayscale(0);
+  opacity: 1;
 }
 
 .modal-footer .buttons-container {
@@ -677,8 +679,8 @@ button.send-email-token-form {
   white-space: nowrap;
 }
 
-.result-renku-publish-link:hover .result-renku-publish-link-tooltip,
-.return-progress-link:hover .return-progress-link-tooltip,
+.result-renku-publish-link.enabled:hover .result-renku-publish-link-tooltip,
+.return-progress-link.enabled .prompt:hover .return-progress-link-tooltip,
 .more-less-details:hover .more-less-details-tooltip {
   visibility: visible;
 }
