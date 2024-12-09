@@ -4,3 +4,7 @@ global-styling:
       /themes/contrib/bootstrap5/dist/icons/1.11.0/font/bootstrap-icons.css: {}      
       css/style.css: {}
       css/custom.css: {}
+  js:
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
