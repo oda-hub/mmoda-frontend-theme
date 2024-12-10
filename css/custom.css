@@ -87,7 +87,7 @@ span.card-header-toolbox span, span.card-header-toolbox a, span.card-header-tool
   overflow-y: auto;
 }
 
-.modal-body{
+.modal-body-min-height {
   min-height: 30vh;
 }
 
