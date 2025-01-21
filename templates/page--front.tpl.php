@@ -113,6 +113,14 @@ if ($is_front) {
         title="Kyiv Academic University (KAU)"><img
         src="<?php print $base_path.$directory;?>/logo-kau.png" alt="Kyiv Academic University (KAU)" />
       </a>
+      <a class="logo navbar-btn pull-left"
+        href="https://www.astro.unige.ch/astroordas" target="_blank"
+        title="AstroORDAS"><img
+        src="<?php print $base_path.$directory;?>/logo-astroORDAS.png" alt="AstroORDAS" />
+      <a class="logo navbar-btn pull-left"
+        href="https://cordis.europa.eu/project/id/101131928" target="_blank"
+        title="AstroORDAS"><img
+        src="<?php print $base_path.$directory;?>/logo-acme.png" alt="ACME" />
       <?php endif; ?>
 
       <!-- MTM disable site name
