@@ -168,3 +168,7 @@ button.eu-cookie-compliance-default-button::before {
 .alert-warning {
   color: darkred;
 }
+
+#edit-openid-connect-client-github-login {
+  border-radius: 4px 0px 0px 4px !important;
+}
